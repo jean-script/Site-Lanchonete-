@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contatos - lanchonete da Praça</title>
+
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/produtostyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="img/slogan-para-lanchonete.jpg" alt="logo-loja" class="img-logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="fundo-contato">
+            <ul class="ul-erros"></ul>
+            <form id="form">
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="nome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" name="email" required placeholder="Seuemail@dominio.vom.br"> 
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" name="tel" required placeholder="(xx)xxxx-xxxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao" placeholder="Digite sua opinião sobre nós"></textarea>
+
+                <fieldset style="border: none;">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <labeL for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</labeL>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked >WhatsApp</label>
+                    
+                </fieldset>
+
+                <fieldset style="border: none;">
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>15h ~21h</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td> 15h ~21</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td> 15h ~21</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td> 15h ~21</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td> 15h ~21</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="footer">
+            <img src="img/logo-footer.png" class="img-footer">
+            <p>&copy; Copyrigth lanchonete da Praça</p>
+            <p>2021</p>
+        </footer>
+
+        <script src="JS/validacao.js"></script>
+    </body>
+</html>

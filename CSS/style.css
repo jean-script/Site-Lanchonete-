@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background: #ffffff;
+}
+
+.nomeloja {
+    padding-left: 20px;
+}
+.imagemcomeco {
+    width: 100%;
+}
+.sobre {
+    text-align: center;
+}
+.missao {
+    background: rgba(167, 167, 164, 0.808);
+    padding: 20px;
+    text-align: center;
+}
+em strong {
+    color: red;
+}
+.missao p {
+    font-size: 18px;
+}
+.missao .nossa_missao {
+    font-size: 23px;
+}
+.title3 {
+   text-align: center; 
+}
+.lista {
+    font-style: italic;
+}
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 3%;
+}
+.lancheimg {
+    width: 50%;
+    height: 350px;
+}
